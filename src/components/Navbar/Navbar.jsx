@@ -19,13 +19,13 @@ export default function Navbar() {
           <div className="list hidden lg:flex">
             <ul className='flex gap-10 uppercase text-lg font-semibold'>
               <li>
-                <NavLink to={"about"}>about</NavLink>
+                <NavLink   to={"about"}>about</NavLink>
               </li>
               <li>
-                <NavLink to={"portfolio"}>portfolio</NavLink>
+                <NavLink  to={"portfolio"}>portfolio</NavLink>
               </li>
               <li>
-                <NavLink to={"contact"}> contact</NavLink>
+                <NavLink   to={"contact"}> contact</NavLink>
               </li>
             </ul>
           </div>
@@ -42,13 +42,13 @@ export default function Navbar() {
         >
           {display == true ? <ul className=' lg:hidden   space-y-6 mt-3 uppercase text-lg font-semibold'>
             <li>
-              <NavLink to={"about"}>about</NavLink>
+              <NavLink onClick={()=>setdisplay(false)} to={"about"}>about</NavLink>
             </li>
             <li>
-              <NavLink to={"portfolio"}>portfolio</NavLink>
+              <NavLink onClick={()=>setdisplay(false)} to={"portfolio"}>portfolio</NavLink>
             </li>
             <li>
-              <NavLink to={"contact"}> contact</NavLink>
+              <NavLink onClick={()=>setdisplay(false)} to={"contact"}> contact</NavLink>
             </li>
           </ul> : ""}
         </div>
